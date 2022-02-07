@@ -2,7 +2,7 @@
 
 @test "greet: say hello to argument" {
   result=$(./script.sh greet linus)
-  [ "$result" == "hello, linus" ]
+  [ "$result" == "hello, clinus" ]
 }
 
 @test "error: show error and exit with 1" {
