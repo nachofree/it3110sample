@@ -1,3 +1,14 @@
-#!/bin/bash
+#! /bin/sh
+# file: examples/party_test.sh
 
-echo "world"
+testEquality() {
+  assertEquals 1 1
+}
+
+testPartyLikeItIs1999() {
+  year=`date '+%Y'`
+  assertEquals "It's not 1999 :-(" '1999' "${year}"
+}
+
+# Load shUnit2.
+. ../shunit2

@@ -1,3 +1,9 @@
-#!/bin/bash
+#! /bin/sh
+# file: examples/equality_test.sh
 
-echo "hello"
+testEquality() {
+  assertEquals 1 1
+}
+
+# Load shUnit2.
+. ../shunit2
